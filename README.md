@@ -74,4 +74,4 @@ Nest is [MIT licensed](LICENSE).
 
 ## IMPORTANT
 
-You must create first a Postgres Database first and fill accordingly the .env file
+You must create first a Postgres Database and fill accordingly the .env file

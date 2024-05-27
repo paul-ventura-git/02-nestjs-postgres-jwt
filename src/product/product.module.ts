@@ -12,4 +12,4 @@ import { productProviders } from './product.providers';
   exports: [ProductService],
   controllers: [ProductController],
 })
-export class UserModule {}
+export class ProductModule {}

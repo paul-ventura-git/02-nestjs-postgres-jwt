@@ -19,6 +19,7 @@ export class ProductService {
         product.price = newProduct.price;
         product.stock = newProduct.stock;
         product.brand = newProduct.brand;
+        product.image = newProduct.image;
     
         return this.productRepository.save(product);
       }

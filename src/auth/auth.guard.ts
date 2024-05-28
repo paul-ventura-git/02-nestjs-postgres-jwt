@@ -18,12 +18,12 @@ dotenvExpand.expand(dotenv.config());
   
     async canActivate(context: ExecutionContext): Promise<boolean> {
       const isPublic = this.reflector.getAllAndOverride<boolean>(IS_PUBLIC_KEY, [
-        context.getHandler(),
-        context.getClass(),
+        context.getHandler(), // Which FUNCTION is being requested from CLIENT?
+        context.getClass(),   // From which CLASS is being requested that FUNCTION?
       ]);
       if (isPublic) {
         // 💡 See this condition
-        return true;
+        return true; // Admitted. No more verifications.
       }
   
       const request = context.switchToHttp().getRequest();
